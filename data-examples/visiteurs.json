@@ -1,0 +1,72 @@
+[
+  {
+    "nom": "Dupont",
+    "prenom": "Jean",
+    "tel": "0601020304",
+    "email": "jean.dupont@gsb.fr",
+    "date_embauche": "2020-01-15"
+  },
+  {
+    "nom": "Mercier",
+    "prenom": "Alice",
+    "tel": "0602030405",
+    "email": "alice.mercier@gsb.fr",
+    "date_embauche": "2019-03-20"
+  },
+  {
+    "nom": "Lefebvre",
+    "prenom": "Thomas",
+    "tel": "0603040506",
+    "email": "thomas.lefebvre@gsb.fr",
+    "date_embauche": "2021-06-10"
+  },
+  {
+    "nom": "Rousseau",
+    "prenom": "Sarah",
+    "tel": "0604050607",
+    "email": "sarah.rousseau@gsb.fr",
+    "date_embauche": "2018-09-05"
+  },
+  {
+    "nom": "Vincent",
+    "prenom": "Julien",
+    "tel": "0605060708",
+    "email": "julien.vincent@gsb.fr",
+    "date_embauche": "2022-02-14"
+  },
+  {
+    "nom": "Fournier",
+    "prenom": "Laura",
+    "tel": "0606070809",
+    "email": "laura.fournier@gsb.fr",
+    "date_embauche": "2020-11-25"
+  },
+  {
+    "nom": "Garnier",
+    "prenom": "Marc",
+    "tel": "0607080910",
+    "email": "marc.garnier@gsb.fr",
+    "date_embauche": "2019-07-18"
+  },
+  {
+    "nom": "Blanchard",
+    "prenom": "Emma",
+    "tel": "0608091011",
+    "email": "emma.blanchard@gsb.fr",
+    "date_embauche": "2021-04-30"
+  },
+  {
+    "nom": "Faure",
+    "prenom": "Nicolas",
+    "tel": "0609101112",
+    "email": "nicolas.faure@gsb.fr",
+    "date_embauche": "2023-01-10"
+  },
+  {
+    "nom": "Andre",
+    "prenom": "Sophie",
+    "tel": "0610111213",
+    "email": "sophie.andre@gsb.fr",
+    "date_embauche": "2020-08-22"
+  }
+]

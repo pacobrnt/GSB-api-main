@@ -1,0 +1,7 @@
+[
+  {
+    "description": "Exemple d'ajout d'un praticien au portefeuille d'un visiteur",
+    "visiteurId": "REMPLACER_PAR_ID_VISITEUR",
+    "praticienId": "REMPLACER_PAR_ID_PRATICIEN"
+  }
+]

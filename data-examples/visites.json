@@ -1,0 +1,72 @@
+[
+  {
+    "date_visite": "2024-12-01T09:00:00.000Z",
+    "commentaire": "Présentation des nouveaux produits de la gamme antidouleur. Le praticien s'est montré très intéressé.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-02T10:30:00.000Z",
+    "commentaire": "Formation sur l'utilisation des nouveaux dispositifs médicaux.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-03T14:00:00.000Z",
+    "commentaire": "Suivi régulier, renouvellement de commande pour le mois prochain.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-04T11:15:00.000Z",
+    "commentaire": "Démonstration du nouveau système de gestion des prescriptions électroniques.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-05T15:30:00.000Z",
+    "commentaire": "Visite de prospection, premier contact établi. Le praticien souhaite plus d'informations.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-06T08:45:00.000Z",
+    "commentaire": "Service après-vente, résolution d'un problème de livraison.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-09T13:00:00.000Z",
+    "commentaire": "Audit qualité annuel, tout est conforme aux normes.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-10T10:00:00.000Z",
+    "commentaire": "Présentation du plan de formation pour le personnel médical du centre.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-11T16:00:00.000Z",
+    "commentaire": "Suivi post-formation, évaluation de la satisfaction du praticien.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  },
+  {
+    "date_visite": "2024-12-12T09:30:00.000Z",
+    "commentaire": "Renouvellement du contrat annuel, négociation des nouvelles conditions.",
+    "visiteur": "REMPLACER_PAR_ID_VISITEUR",
+    "praticien": "REMPLACER_PAR_ID_PRATICIEN",
+    "motif": "REMPLACER_PAR_ID_MOTIF"
+  }
+]

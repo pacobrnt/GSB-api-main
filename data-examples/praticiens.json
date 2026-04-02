@@ -1,0 +1,92 @@
+[
+  {
+    "nom": "Martin",
+    "prenom": "Sophie",
+    "tel": "0612345678",
+    "email": "sophie.martin@hopital-paris.fr",
+    "rue": "15 avenue des Champs Élysées",
+    "code_postal": "75008",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Bernard",
+    "prenom": "Pierre",
+    "tel": "0623456789",
+    "email": "pierre.bernard@clinique-lyon.fr",
+    "rue": "28 rue de la République",
+    "code_postal": "69002",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Dubois",
+    "prenom": "Marie",
+    "tel": "0634567890",
+    "email": "marie.dubois@centre-marseille.fr",
+    "rue": "42 boulevard Longchamp",
+    "code_postal": "13001",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Leroy",
+    "prenom": "Antoine",
+    "tel": "0645678901",
+    "email": "antoine.leroy@hopital-toulouse.fr",
+    "rue": "10 allée Jean Jaurès",
+    "code_postal": "31000",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Moreau",
+    "prenom": "Christine",
+    "tel": "0656789012",
+    "email": "christine.moreau@clinique-nice.fr",
+    "rue": "5 promenade des Anglais",
+    "code_postal": "06000",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Simon",
+    "prenom": "François",
+    "tel": "0667890123",
+    "email": "francois.simon@centre-nantes.fr",
+    "rue": "33 rue Crébillon",
+    "code_postal": "44000",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Laurent",
+    "prenom": "Isabelle",
+    "tel": "0678901234",
+    "email": "isabelle.laurent@hopital-strasbourg.fr",
+    "rue": "18 place Kléber",
+    "code_postal": "67000",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Petit",
+    "prenom": "Michel",
+    "tel": "0689012345",
+    "email": "michel.petit@clinique-bordeaux.fr",
+    "rue": "25 cours de l'Intendance",
+    "code_postal": "33000",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Girard",
+    "prenom": "Catherine",
+    "tel": "0690123456",
+    "email": "catherine.girard@centre-lille.fr",
+    "rue": "12 rue Nationale",
+    "code_postal": "59000",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Roux",
+    "prenom": "Jean",
+    "tel": "0601234567",
+    "email": "jean.roux@hopital-rennes.fr",
+    "rue": "8 place de la Mairie",
+    "code_postal": "35000",
+    "ville": "Rennes"
+  }
+]
