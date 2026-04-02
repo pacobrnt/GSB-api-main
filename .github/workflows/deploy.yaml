@@ -20,6 +20,7 @@ jobs:
       with:
         node-version: '20'
     - run: npm ci
+    
     - run: npm run build
     - run: npm test -- --verbose
 
@@ -39,3 +40,4 @@ jobs:
         version_label: ${{ github.sha }}-${{ github.run_number }}
         region: us-east-1
         deployment_package: deploy.zip
+        health_check_url: /health
