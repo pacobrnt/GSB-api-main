@@ -13,7 +13,7 @@ export class VisiteurService {
    */
   public async create(data: Partial<IVisiteur>): Promise<IVisiteur> {
     // Vérifier que l'email n'est pas déjà utilisé
-    const existing = await Visiteur.findOne({ email: data.email });
+    const existing = data.email !== undefined ? await Visiteur.findOne({ email: data.email }) : null;
     if (existing) {
       throw new Error(`Un visiteur avec l'email ${data.email} existe déjà`);
     }

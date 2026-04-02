@@ -20,7 +20,7 @@ export const authMiddleware = (
     }
 
     const token = authHeader.split(' ')[1];
-    const decodedToken = jwt.verify(token, process.env.JWT_SECRET as string, { algorithms: ['HS256'] }) as DecodedToken;
+    const decodedToken = jwt.verify(token!, process.env.JWT_SECRET!, { algorithms: ['HS256'] }) as unknown as DecodedToken;
 
     req.auth = { userId: decodedToken.userId, role: decodedToken.role };
     next();

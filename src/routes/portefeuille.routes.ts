@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import { Router, type Request, type Response } from 'express';
 import { PortefeuilleController } from '../controllers/portefeuille.controller.js';
 import { validate } from '../middleware/validate.middleware.js';
 import {
@@ -28,24 +28,24 @@ const portefeuilleController = new PortefeuilleController();
  */
 
 // GET /api/portefeuille - Récupère toutes les relations de portefeuille
-router.get('/', (req, res) => portefeuilleController.getAll(req, res));
+router.get('/', (req: Request, res: Response) => portefeuilleController.getAll(req, res));
 
 // GET /api/portefeuille/visiteur/:visiteurId - Récupère le portefeuille d'un visiteur
-router.get('/visiteur/:visiteurId', getPortefeuilleByVisiteurValidation, validate, (req, res) => portefeuilleController.getByVisiteur(req, res));
+router.get('/visiteur/:visiteurId', getPortefeuilleByVisiteurValidation, validate, (req: Request, res: Response) => portefeuilleController.getByVisiteur(req, res));
 
 // GET /api/portefeuille/praticien/:praticienId - Récupère tous les visiteurs associés à un praticien
-router.get('/praticien/:praticienId', getPortefeuilleByPraticienValidation, validate, (req, res) => portefeuilleController.getByPraticien(req, res));
+router.get('/praticien/:praticienId', getPortefeuilleByPraticienValidation, validate, (req: Request, res: Response) => portefeuilleController.getByPraticien(req, res));
 
 // POST /api/portefeuille - Ajoute un praticien au portefeuille d'un visiteur
-router.post('/', addPraticienToPortefeuilleValidation, validate, (req, res) => portefeuilleController.addPraticien(req, res));
+router.post('/', addPraticienToPortefeuilleValidation, validate, (req: Request, res: Response) => portefeuilleController.addPraticien(req, res));
 
 // PATCH /api/portefeuille/:visiteurId/:praticienId/notes - Met à jour les notes d'une relation
-router.patch('/:visiteurId/:praticienId/notes', updateNotesValidation, validate, (req, res) => portefeuilleController.updateNotes(req, res));
+router.patch('/:visiteurId/:praticienId/notes', updateNotesValidation, validate, (req: Request, res: Response) => portefeuilleController.updateNotes(req, res));
 
 // PATCH /api/portefeuille/:visiteurId/:praticienId/remove - Désactive un praticien du portefeuille (soft delete)
-router.patch('/:visiteurId/:praticienId/remove', removePraticienValidation, validate, (req, res) => portefeuilleController.removePraticien(req, res));
+router.patch('/:visiteurId/:praticienId/remove', removePraticienValidation, validate, (req: Request, res: Response) => portefeuilleController.removePraticien(req, res));
 
 // DELETE /api/portefeuille/:visiteurId/:praticienId - Supprime définitivement une relation
-router.delete('/:visiteurId/:praticienId', deleteRelationValidation, validate, (req, res) => portefeuilleController.deleteRelation(req, res));
+router.delete('/:visiteurId/:praticienId', deleteRelationValidation, validate, (req: Request, res: Response) => portefeuilleController.deleteRelation(req, res));
 
 export default router;
