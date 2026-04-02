@@ -13,6 +13,17 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build TypeScript
+        run: npm run build
+
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*' -x 'node_modules/*'
 
