@@ -1,30 +1,40 @@
-# Deploy to AWS Elastic Beanstalk
-name: Deploy master
-
+name: Deploy to Elastic Beanstalk
 on:
   push:
     branches:
-      - main
+    - main
+
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
 
-      - name: Generate deployment package
-        run: zip -r deploy.zip . -x '*.git*' -x 'node_modules/*'
 
-      - name: Deploy to Elastic Beanstalk
-        uses: einaregilsson/beanstalk-deploy@v22
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }}
-          application_name: GSB-API
-          environment_name: GSB-API-env
-          version_label: ${{ github.sha }}
-          region: us-east-1
-          deployment_package: deploy.zip
+    - name: Checkout source code
+      uses: actions/checkout@v4
+
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - run: npm ci
+    - run: npm run build
+    - run: npm test -- --verbose
+
+
+    - name: Generate deployment package
+      run: zip -r deploy.zip . -x '*.git*' 'node_modules/*'
+
+
+    - name: Deploy to EB
+      uses: einaregilsson/beanstalk-deploy@v22
+      with:
+        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }}
+        application_name: test-gsb-api
+        environment_name: Test-gsb-api-env
+        version_label: ${{ github.sha }}-${{ github.run_number }}
+        region: us-east-1
+        deployment_package: deploy.zip
