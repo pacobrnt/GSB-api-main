@@ -33,7 +33,6 @@ class App {
    
     this.initializeMiddlewares();
     this.initializeRoutes();
-    this.initializeDatabase();
   }
 
 
@@ -104,7 +103,7 @@ class App {
   /**
    * Initialise la connexion à la base de données
    */
-  private async initializeDatabase(): Promise<void> {
+  public async initializeDatabase(): Promise<void> {
     await this.database.connect();
   }
 
@@ -123,9 +122,14 @@ class App {
 }
 
 
-// Création et démarrage de l'application
+// Connexion DB d'abord, puis démarrage du serveur
 const app = new App();
-app.listen();
+app.initializeDatabase().then(() => {
+  app.listen();
+}).catch((err) => {
+  console.error('Impossible de démarrer le serveur:', err);
+  process.exit(1);
+});
 
 
 process.on('SIGINT', async () => {

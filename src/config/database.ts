@@ -36,24 +36,13 @@ export class Database {
     }
 
     try {
-      const dbUsername = process.env.DB_USERNAME;
-      const dbPassword = process.env.DB_PASSWORD;
-      const dbName = process.env.DB_NAME || 'GSB-API-Rest-ExpressJS';
+      const mongoUri = process.env.DB_URI;
 
-
-      if (!dbUsername || !dbPassword) {
-        throw new Error('DB_USERNAME et DB_PASSWORD sont obligatoires dans .env');
+      if (!mongoUri) {
+        throw new Error('DB_URI est obligatoire dans .env');
       }
 
-
-      const encodedPassword = encodeURIComponent(dbPassword);
-      const mongoUri = `mongodb+srv://${dbUsername}:${encodedPassword}@cluster0.8nrvosd.mongodb.net/${dbName}?retryWrites=true&w=majority&appName=Cluster0`;
-
-      console.log('Tentative de connexion avec:');
-      console.log('- Username:', dbUsername);
-      console.log('- Database:', dbName);
-      console.log('- URI:', mongoUri.replace(encodedPassword, '***'));
-
+      console.log('Tentative de connexion à MongoDB...');
       await mongoose.connect(mongoUri);
       this.isConnected = true;
 
